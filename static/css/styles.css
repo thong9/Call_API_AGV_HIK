@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+}
+div {
+    margin-bottom: 20px; /* Tạo khoảng cách 20px giữa các phần tử */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 100px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.select-style {
+    width: 600px; /* Độ rộng của combobox */
+    height: 35px; /* Chiều cao của combobox */
+    font-size: 16px; /* Kích thước chữ trong combobox */
+    padding: 5px; /* Khoảng cách giữa chữ và viền */
+    border-radius: 5px; /* Bo tròn các góc */
+    border: 1px solid #ccc; /* Màu và kiểu viền */
+}
+
+.select-style:focus {
+    border-color: #007BFF; /* Màu viền khi focus */
+    outline: none; /* Bỏ viền mặc định khi focus */
+}
+
+#method {
+    color: #e60914; /* Màu chữ: bạn có thể thay đổi mã màu theo ý thích */
+    font-size: 24px; /* Kích thước chữ lớn hơn */
+    font-weight: bold; /* Chữ đậm */
+    text-align: left; /* Căn giữa nội dung */
+    margin-top: 20px; /* Khoảng cách trên */
+    padding: 10px; /* Khoảng cách bên trong */
+}
+
+
+#response {
+    width: 100%;              /* Đặt chiều rộng 100% */
+    height: 200px;            /* Chiều cao cố định */
+    border: 1px solid #ccc;   /* Đường viền cho đẹp */
+    padding: 10px;            /* Khoảng cách nội dung và viền */
+    background-color: #f9f9f9;/* Màu nền */
+    overflow-y: auto;         /* Thêm thanh cuộn dọc khi cần */
+    white-space: pre-wrap;    /* Giữ định dạng khoảng trắng và xuống dòng */
+    font-family: monospace;   /* Đặt font chữ kiểu monospace để hiển thị code */
+}
+#responseContainer {
+    width: 100%;              /* Đặt chiều rộng 100% */
+    height: 200px;            /* Chiều cao cố định */
+    border: 1px solid #ccc;   /* Đường viền cho đẹp */
+    padding: 10px;            /* Khoảng cách nội dung và viền */
+    background-color: #f9f9f9;/* Màu nền */
+    overflow-y: auto;         /* Thêm thanh cuộn dọc khi cần */
+    white-space: pre-wrap;    /* Giữ định dạng khoảng trắng và xuống dòng */
+    font-family: monospace;   /* Đặt font chữ kiểu monospace để hiển thị code */
+}

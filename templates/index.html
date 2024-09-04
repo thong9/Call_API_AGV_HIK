@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebSocket Example</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Real-Time Data</h1>
+
+
+    <h2>Send JSON to Another Server</h2>
+    <div>
+        <label for="jsonInput1">Điểm đầu:</label>
+        <input type="text" id="jsonInput" placeholder="Nhập điểm đầu" />
+    </div>
+    <div>
+        <label for="jsonInput1">Điểm cuối:</label>
+        <input type="text" id="jsonInput2" placeholder="Nhập điểm cuối" />
+    </div>
+    <div>
+        <label for="jsonInput3">Nhiệm vụ:</label>
+        <select id="jsonInput3">
+            <option value="A01">A01</option>
+            <option value="2">F02</option>
+            <option value="3">F03</option>
+            <!-- Thêm các tùy chọn khác tại đây -->
+        </select>
+    </div>
+    
+    <button id="sendJsonButton">Send JSON</button>
+
+    <h2>Method :</h2>
+    <div
+    
+        id="method">
+        <!-- Dữ liệu nhận được sẽ hiển thị ở đây -->
+    </div>
+
+    <h2>Dữ liệu nhận</h2>
+    <div id="response">
+        <!-- Dữ liệu nhận được sẽ hiển thị ở đây -->
+    </div>
+
+    <h2>Dữ liệu phản hồi</h2>
+    <div id="responseContainer" style="white-space: pre-wrap;"></div>
+
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
